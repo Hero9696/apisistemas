@@ -1,0 +1,15 @@
+# Disable directory listing but enable all other Options
+Options All -Indexes
+
+# Disable MultiViews to prevent Apache from trying to guess URLs
+Options -MultiViews
+
+# Enable the URL rewriting engine
+RewriteEngine On
+
+# Check if the requested filename does not exist as a file
+RewriteCond $[REQUEST_FILENAME] !-f
+
+# Redirect all requests to index.php while preserving query strings (QSA)
+# L flag means this is the last rule to process
+RewriteRule ^ index.php [QSA, L]
