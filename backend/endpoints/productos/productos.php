@@ -28,7 +28,7 @@ $endAt   = is_numeric($endAt) ? (int)$endAt : null;
 
 // Llamar a la función getData
 $response = GetModel::getData(
-    'productos',  // Nombre de la tabla
+    'bitacora',  // Nombre de la tabla
     $select,
     $orderBy,
     $orderMode,

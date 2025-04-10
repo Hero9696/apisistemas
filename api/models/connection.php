@@ -23,7 +23,7 @@ class Connection
 
 
     $infoDB = array(
-      "database" => "tienda_api", //this is the name of the database
+      "database" => "proyectocadep", //this is the name of the database
       "user" => "root", //xampp = root this is the user of the database from server
       "password" => "", //xampp = "" this is the password of the database from server
     );
