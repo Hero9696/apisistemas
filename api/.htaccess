@@ -13,3 +13,8 @@ RewriteCond $[REQUEST_FILENAME] !-f
 # Redirect all requests to index.php while preserving query strings (QSA)
 # L flag means this is the last rule to process
 RewriteRule ^ index.php [QSA, L]
+
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+

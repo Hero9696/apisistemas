@@ -1,0 +1,5 @@
+[10-Apr-2025 00:17:59 Europe/Berlin] PHP Warning:  require_once(C:\xampp\htdocs\automatitation-front-end\backend\endpoints): Failed to open stream: Permission denied in C:\xampp\htdocs\automatitation-front-end\backend\index.php on line 8
+[10-Apr-2025 00:17:59 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\automatitation-front-end\backend/endpoints' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\automatitation-front-end\backend\index.php:8
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\automatitation-front-end\backend\index.php on line 8

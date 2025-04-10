@@ -23,8 +23,8 @@ class Connection
 
 
     $infoDB = array(
-      "database" => "name_database", //this is the name of the database
-      "user" => "user_database", //xampp = root this is the user of the database from server
+      "database" => "tienda_api", //this is the name of the database
+      "user" => "root", //xampp = root this is the user of the database from server
       "password" => "", //xampp = "" this is the password of the database from server
     );
 
@@ -46,7 +46,7 @@ class Connection
   ==========================*/
   static public function publicAccess()
   {
-    $tables = [""];
+    $tables = [""]; //this is the tables that have public access
     return $tables;
   }
 
@@ -66,7 +66,7 @@ class Connection
 
       $link->exec("set names utf8");
     } catch (PDOException $e) {
-      die("Error: " . $e->getMessage());
+      die("No Se Pudo Conectar A La Base De Datos, Detalle: " . $e->getMessage());
     }
 
     return $link;

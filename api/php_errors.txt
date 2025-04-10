@@ -1,0 +1,52 @@
+[09-Apr-2025 22:39:41 Europe/Berlin] PHP Warning:  include(routes/routes.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\automatitation-front-end\api\controllers\routes.controller.php on line 12
+[09-Apr-2025 22:39:41 Europe/Berlin] PHP Warning:  include(): Failed opening 'routes/routes.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\automatitation-front-end\api\controllers\routes.controller.php on line 12
+[09-Apr-2025 22:43:11 Europe/Berlin] PHP Warning:  require_once(C:\xampp\htdocs\automatitation-front-end\apicontrollers/routes.controller.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\automatitation-front-end\api\index.php on line 31
+[09-Apr-2025 22:43:11 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\automatitation-front-end\apicontrollers/routes.controller.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\automatitation-front-end\api\index.php:31
+Stack trace:
+#0 C:\xampp\htdocs\automatitation-front-end\backend\index.php(8): require_once()
+#1 {main}
+  thrown in C:\xampp\htdocs\automatitation-front-end\api\index.php on line 31
+[09-Apr-2025 22:44:18 Europe/Berlin] PHP Warning:  require_once(C:\xampp\htdocs\automatitation-front-end\apicontrollers/routes.controller.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\automatitation-front-end\api\index.php on line 31
+[09-Apr-2025 22:44:18 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\automatitation-front-end\apicontrollers/routes.controller.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\automatitation-front-end\api\index.php:31
+Stack trace:
+#0 C:\xampp\htdocs\automatitation-front-end\backend\index.php(8): require_once()
+#1 {main}
+  thrown in C:\xampp\htdocs\automatitation-front-end\api\index.php on line 31
+[09-Apr-2025 22:44:19 Europe/Berlin] PHP Warning:  require_once(C:\xampp\htdocs\automatitation-front-end\apicontrollers/routes.controller.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\automatitation-front-end\api\index.php on line 31
+[09-Apr-2025 22:44:19 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\automatitation-front-end\apicontrollers/routes.controller.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\automatitation-front-end\api\index.php:31
+Stack trace:
+#0 C:\xampp\htdocs\automatitation-front-end\backend\index.php(8): require_once()
+#1 {main}
+  thrown in C:\xampp\htdocs\automatitation-front-end\api\index.php on line 31
+[09-Apr-2025 22:49:15 Europe/Berlin] PHP Warning:  require_once(controllers/get.controller.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\automatitation-front-end\api\routes\services\get.php on line 3
+[09-Apr-2025 22:49:15 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'controllers/get.controller.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\automatitation-front-end\api\routes\services\get.php:3
+Stack trace:
+#0 C:\xampp\htdocs\automatitation-front-end\api\routes\routes.php(71): include()
+#1 C:\xampp\htdocs\automatitation-front-end\api\controllers\routes.controller.php(12): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\automatitation-front-end\api\index.php(40): RoutesController->index()
+#3 C:\xampp\htdocs\automatitation-front-end\backend\index.php(8): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\automatitation-front-end\api\routes\services\get.php on line 3
+[09-Apr-2025 22:50:18 Europe/Berlin] PHP Warning:  require_once(C:\xampp\htdocs\automatitation-front-end\api\routes\services/../controllers/get.controller.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\automatitation-front-end\api\routes\services\get.php on line 3
+[09-Apr-2025 22:50:18 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\automatitation-front-end\api\routes\services/../controllers/get.controller.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\automatitation-front-end\api\routes\services\get.php:3
+Stack trace:
+#0 C:\xampp\htdocs\automatitation-front-end\api\routes\routes.php(71): include()
+#1 C:\xampp\htdocs\automatitation-front-end\api\controllers\routes.controller.php(12): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\automatitation-front-end\api\index.php(40): RoutesController->index()
+#3 C:\xampp\htdocs\automatitation-front-end\backend\index.php(8): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\automatitation-front-end\api\routes\services\get.php on line 3
+[09-Apr-2025 22:50:53 Europe/Berlin] PHP Warning:  require_once(models/connection.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\automatitation-front-end\api\routes\services\get.php on line 4
+[09-Apr-2025 22:50:53 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'models/connection.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\automatitation-front-end\api\routes\services\get.php:4
+Stack trace:
+#0 C:\xampp\htdocs\automatitation-front-end\api\routes\routes.php(71): include()
+#1 C:\xampp\htdocs\automatitation-front-end\api\controllers\routes.controller.php(12): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\automatitation-front-end\api\index.php(40): RoutesController->index()
+#3 C:\xampp\htdocs\automatitation-front-end\backend\index.php(8): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\automatitation-front-end\api\routes\services\get.php on line 4
+[10-Apr-2025 00:38:55 Europe/Berlin] PHP Warning:  require_once(C:\xampp\htdocs\automatitation-front-end\backend\endpoints): Failed to open stream: Permission denied in C:\xampp\htdocs\automatitation-front-end\backend\index.php on line 9
+[10-Apr-2025 00:38:55 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\automatitation-front-end\backend/endpoints' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\automatitation-front-end\backend\index.php:9
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\automatitation-front-end\backend\index.php on line 9

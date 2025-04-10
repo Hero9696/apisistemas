@@ -28,7 +28,7 @@ header('content-type: application/json; charset=utf-8');
 /*=================
 requirements
 =================*/
-require_once "controllers/routes.controller.php";
+require_once __DIR__ . "/controllers/routes.controller.php";
 
 
 $index = new RoutesController();

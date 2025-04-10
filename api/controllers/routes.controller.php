@@ -9,6 +9,6 @@ class RoutesController
 
   public function index()
   {
-    include "routes/routes.php";
+    include __DIR__. "/../routes/routes.php";
   }
 }

@@ -1,7 +1,7 @@
 <?php
 
-require_once "controllers/get.controller.php";
-require_once "models/connection.php";
+require_once __DIR__ . "/../../controllers/get.controller.php";
+require_once __DIR__ . "/../../models/connection.php";
 
 $select = $_GET["select"] ?? "*";
 $orderBy = $_GET["orderBy"] ?? null;
