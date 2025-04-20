@@ -7,7 +7,10 @@ ini_set('error_log', dirname(__FILE__) . '/errorLog.txt');
 
 
 
-require_once __DIR__ . '/endpoints/escolaridad/escolaridad.php';
+require_once __DIR__ . '/endpoints/escolaridad/escolaridadDelete.php';
+require_once __DIR__ . '/endpoints/escolaridad/escolaridadGet.php';
+require_once __DIR__ . '/endpoints/escolaridad/escolaridadPost.php';
+require_once __DIR__ . '/endpoints/escolaridad/escolaridad.Put.php';
 
 /*=============================================
 Endpoints agregados por: Engelber Venceslav Cifuentes Moran
