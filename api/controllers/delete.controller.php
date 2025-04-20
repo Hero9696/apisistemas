@@ -1,6 +1,6 @@
 <?php
 
-require_once "models/delete.model.php";
+require_once __DIR__ . "/../models/delete.model.php";
 
 class DeleteController
 {

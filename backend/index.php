@@ -6,8 +6,8 @@ ini_set('log_errors', 1);
 ini_set('error_log', dirname(__FILE__) . '/errorLog.txt');
 
 
-require_once __DIR__ . '/endpoints/usuarios/usuarios.php';
-require_once __DIR__ . '/endpoints/productos/productos.php';
+
+require_once __DIR__ . '/endpoints/escolaridad/escolaridad.php';
 
 /*=============================================
 Endpoints agregados por: Engelber Venceslav Cifuentes Moran
