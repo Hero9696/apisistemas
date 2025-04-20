@@ -26,4 +26,6 @@ require_once __DIR__ . '/endpoints/paciente/paciente.php';
 require_once __DIR__ . '/endpoints/parentezco/parentezco.php';
 
 
+//comentarios para el git
+
 
