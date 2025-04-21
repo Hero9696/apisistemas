@@ -1,6 +1,6 @@
 <?php
 
-require_once "models/put.model.php";
+require_once __DIR__ . "/../models/put.model.php";
 
 class PutController
 {

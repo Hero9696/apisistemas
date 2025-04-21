@@ -1,14 +1,14 @@
 <?php
 
-require_once "models/get.model.php";
-require_once "models/post.model.php";
-require_once "models/connection.php";
+require_once __DIR__ . "/../models/get.model.php";
+require_once  __DIR__ ."/../models/post.model.php";
+require_once  __DIR__ ."/../models/connection.php";
 
-require_once "vendor/autoload.php";
+require_once  __DIR__ . "/../vendor/autoload.php";
 
 use Firebase\JWT\JWT;
 
-require_once "models/put.model.php";
+require_once __DIR__ . "/../models/put.model.php";
 
 class PostController
 {
