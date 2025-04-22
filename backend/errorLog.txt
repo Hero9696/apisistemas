@@ -3,3 +3,138 @@
 Stack trace:
 #0 {main}
   thrown in C:\xampp\htdocs\automatitation-front-end\backend\index.php on line 8
+[19-Apr-2025 01:25:29 Europe/Berlin] PHP Warning:  require_once(C:\xampp\htdocs\apisistemas\backend\endpoints): Failed to open stream: Permission denied in C:\xampp\htdocs\apisistemas\backend\index.php on line 9
+[19-Apr-2025 01:25:29 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\apisistemas\backend/endpoints' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\apisistemas\backend\index.php:9
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\apisistemas\backend\index.php on line 9
+[19-Apr-2025 01:32:48 Europe/Berlin] PHP Warning:  require_once(C:\xampp\htdocs\apisistemas\backend../endpoints): Failed to open stream: Permission denied in C:\xampp\htdocs\apisistemas\backend\index.php on line 9
+[19-Apr-2025 01:32:48 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\apisistemas\backend../endpoints' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\apisistemas\backend\index.php:9
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\apisistemas\backend\index.php on line 9
+[19-Apr-2025 01:33:03 Europe/Berlin] PHP Warning:  require_once(C:\xampp\htdocs\apisistemas\backend\endpoints): Failed to open stream: Permission denied in C:\xampp\htdocs\apisistemas\backend\index.php on line 9
+[19-Apr-2025 01:33:03 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\apisistemas\backend/endpoints' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\apisistemas\backend\index.php:9
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\apisistemas\backend\index.php on line 9
+[19-Apr-2025 01:33:58 Europe/Berlin] PHP Warning:  require_once(C:\xampp\htdocs\apisistemas\backendbackend/endpoints): Failed to open stream: No such file or directory in C:\xampp\htdocs\apisistemas\backend\index.php on line 9
+[19-Apr-2025 01:33:58 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\apisistemas\backendbackend/endpoints' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\apisistemas\backend\index.php:9
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\apisistemas\backend\index.php on line 9
+[19-Apr-2025 01:33:59 Europe/Berlin] PHP Warning:  require_once(C:\xampp\htdocs\apisistemas\backendbackend/endpoints): Failed to open stream: No such file or directory in C:\xampp\htdocs\apisistemas\backend\index.php on line 9
+[19-Apr-2025 01:33:59 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\apisistemas\backendbackend/endpoints' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\apisistemas\backend\index.php:9
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\apisistemas\backend\index.php on line 9
+[19-Apr-2025 01:34:08 Europe/Berlin] PHP Warning:  require_once(C:\xampp\htdocs\apisistemas\backend../endpoints): Failed to open stream: Permission denied in C:\xampp\htdocs\apisistemas\backend\index.php on line 9
+[19-Apr-2025 01:34:08 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\apisistemas\backend../endpoints' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\apisistemas\backend\index.php:9
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\apisistemas\backend\index.php on line 9
+[19-Apr-2025 01:34:23 Europe/Berlin] PHP Warning:  require_once(C:\xampp\htdocs\apisistemas\backend..backend/endpoints): Failed to open stream: No such file or directory in C:\xampp\htdocs\apisistemas\backend\index.php on line 9
+[19-Apr-2025 01:34:23 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\apisistemas\backend..backend/endpoints' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\apisistemas\backend\index.php:9
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\apisistemas\backend\index.php on line 9
+[19-Apr-2025 01:34:24 Europe/Berlin] PHP Warning:  require_once(C:\xampp\htdocs\apisistemas\backend..backend/endpoints): Failed to open stream: No such file or directory in C:\xampp\htdocs\apisistemas\backend\index.php on line 9
+[19-Apr-2025 01:34:24 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\apisistemas\backend..backend/endpoints' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\apisistemas\backend\index.php:9
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\apisistemas\backend\index.php on line 9
+[19-Apr-2025 01:34:25 Europe/Berlin] PHP Warning:  require_once(C:\xampp\htdocs\apisistemas\backend..backend/endpoints): Failed to open stream: No such file or directory in C:\xampp\htdocs\apisistemas\backend\index.php on line 9
+[19-Apr-2025 01:34:25 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\apisistemas\backend..backend/endpoints' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\apisistemas\backend\index.php:9
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\apisistemas\backend\index.php on line 9
+[19-Apr-2025 01:34:25 Europe/Berlin] PHP Warning:  require_once(C:\xampp\htdocs\apisistemas\backend..backend/endpoints): Failed to open stream: No such file or directory in C:\xampp\htdocs\apisistemas\backend\index.php on line 9
+[19-Apr-2025 01:34:25 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\apisistemas\backend..backend/endpoints' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\apisistemas\backend\index.php:9
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\apisistemas\backend\index.php on line 9
+[19-Apr-2025 01:34:41 Europe/Berlin] PHP Warning:  require_once(C:\xampp\htdocs\apisistemas\backend\endpoints): Failed to open stream: Permission denied in C:\xampp\htdocs\apisistemas\backend\index.php on line 9
+[19-Apr-2025 01:34:41 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\apisistemas\backend/endpoints' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\apisistemas\backend\index.php:9
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\apisistemas\backend\index.php on line 9
+[19-Apr-2025 01:35:04 Europe/Berlin] PHP Warning:  require_once(C:\xampp\htdocs\apisistemas\backendendpoints): Failed to open stream: No such file or directory in C:\xampp\htdocs\apisistemas\backend\index.php on line 9
+[19-Apr-2025 01:35:04 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\apisistemas\backendendpoints' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\apisistemas\backend\index.php:9
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\apisistemas\backend\index.php on line 9
+[19-Apr-2025 01:35:05 Europe/Berlin] PHP Warning:  require_once(C:\xampp\htdocs\apisistemas\backendendpoints): Failed to open stream: No such file or directory in C:\xampp\htdocs\apisistemas\backend\index.php on line 9
+[19-Apr-2025 01:35:05 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\apisistemas\backendendpoints' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\apisistemas\backend\index.php:9
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\apisistemas\backend\index.php on line 9
+[19-Apr-2025 01:35:13 Europe/Berlin] PHP Warning:  require_once(C:\xampp\htdocs\apisistemas\backend\endpoints): Failed to open stream: Permission denied in C:\xampp\htdocs\apisistemas\backend\index.php on line 9
+[19-Apr-2025 01:35:13 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\apisistemas\backend/endpoints' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\apisistemas\backend\index.php:9
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\apisistemas\backend\index.php on line 9
+[19-Apr-2025 01:35:17 Europe/Berlin] PHP Warning:  require_once(C:\xampp\htdocs\apisistemas\backend./endpoints): Failed to open stream: Permission denied in C:\xampp\htdocs\apisistemas\backend\index.php on line 9
+[19-Apr-2025 01:35:17 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\apisistemas\backend./endpoints' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\apisistemas\backend\index.php:9
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\apisistemas\backend\index.php on line 9
+[19-Apr-2025 01:35:54 Europe/Berlin] PHP Warning:  require_once(C:\xampp\htdocs\apisistemas\backend\endpoints): Failed to open stream: Permission denied in C:\xampp\htdocs\apisistemas\backend\index.php on line 9
+[19-Apr-2025 01:35:54 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\apisistemas\backend\endpoints' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\apisistemas\backend\index.php:9
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\apisistemas\backend\index.php on line 9
+[19-Apr-2025 01:36:41 Europe/Berlin] PHP Warning:  require_once(C:\xampp\htdocs\apisistemas\backend\backend\endpoints): Failed to open stream: No such file or directory in C:\xampp\htdocs\apisistemas\backend\index.php on line 9
+[19-Apr-2025 01:36:41 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\apisistemas\backend\backend\endpoints' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\apisistemas\backend\index.php:9
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\apisistemas\backend\index.php on line 9
+[19-Apr-2025 01:36:42 Europe/Berlin] PHP Warning:  require_once(C:\xampp\htdocs\apisistemas\backend\backend\endpoints): Failed to open stream: No such file or directory in C:\xampp\htdocs\apisistemas\backend\index.php on line 9
+[19-Apr-2025 01:36:42 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\apisistemas\backend\backend\endpoints' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\apisistemas\backend\index.php:9
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\apisistemas\backend\index.php on line 9
+[19-Apr-2025 01:36:43 Europe/Berlin] PHP Warning:  require_once(C:\xampp\htdocs\apisistemas\backend\backend\endpoints): Failed to open stream: No such file or directory in C:\xampp\htdocs\apisistemas\backend\index.php on line 9
+[19-Apr-2025 01:36:43 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\apisistemas\backend\backend\endpoints' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\apisistemas\backend\index.php:9
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\apisistemas\backend\index.php on line 9
+[19-Apr-2025 01:36:43 Europe/Berlin] PHP Warning:  require_once(C:\xampp\htdocs\apisistemas\backend\backend\endpoints): Failed to open stream: No such file or directory in C:\xampp\htdocs\apisistemas\backend\index.php on line 9
+[19-Apr-2025 01:36:43 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\apisistemas\backend\backend\endpoints' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\apisistemas\backend\index.php:9
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\apisistemas\backend\index.php on line 9
+[19-Apr-2025 01:37:02 Europe/Berlin] PHP Warning:  require_once(C:\xampp\htdocs\apisistemas\backend\backend\endpoints\usuarios\usuarios.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\apisistemas\backend\index.php on line 9
+[19-Apr-2025 01:37:02 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\apisistemas\backend\backend\endpoints\usuarios\usuarios.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\apisistemas\backend\index.php:9
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\apisistemas\backend\index.php on line 9
+[19-Apr-2025 01:37:03 Europe/Berlin] PHP Warning:  require_once(C:\xampp\htdocs\apisistemas\backend\backend\endpoints\usuarios\usuarios.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\apisistemas\backend\index.php on line 9
+[19-Apr-2025 01:37:03 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\apisistemas\backend\backend\endpoints\usuarios\usuarios.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\apisistemas\backend\index.php:9
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\apisistemas\backend\index.php on line 9
+[19-Apr-2025 01:37:03 Europe/Berlin] PHP Warning:  require_once(C:\xampp\htdocs\apisistemas\backend\backend\endpoints\usuarios\usuarios.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\apisistemas\backend\index.php on line 9
+[19-Apr-2025 01:37:03 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\apisistemas\backend\backend\endpoints\usuarios\usuarios.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\apisistemas\backend\index.php:9
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\apisistemas\backend\index.php on line 9
+[19-Apr-2025 01:37:03 Europe/Berlin] PHP Warning:  require_once(C:\xampp\htdocs\apisistemas\backend\backend\endpoints\usuarios\usuarios.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\apisistemas\backend\index.php on line 9
+[19-Apr-2025 01:37:03 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\apisistemas\backend\backend\endpoints\usuarios\usuarios.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\apisistemas\backend\index.php:9
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\apisistemas\backend\index.php on line 9
+[19-Apr-2025 01:37:23 Europe/Berlin] PHP Warning:  require_once(C:\xampp\htdocs\apisistemas\backend\endpoints): Failed to open stream: Permission denied in C:\xampp\htdocs\apisistemas\backend\index.php on line 9
+[19-Apr-2025 01:37:23 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\apisistemas\backend/endpoints' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\apisistemas\backend\index.php:9
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\apisistemas\backend\index.php on line 9
+[19-Apr-2025 01:58:05 Europe/Berlin] PHP Warning:  require_once(C:\xampp\htdocs\apisistemas\backend\endpoints): Failed to open stream: Permission denied in C:\xampp\htdocs\apisistemas\backend\index.php on line 9
+[19-Apr-2025 01:58:05 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\apisistemas\backend/endpoints' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\apisistemas\backend\index.php:9
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\apisistemas\backend\index.php on line 9
+[19-Apr-2025 01:58:41 Europe/Berlin] PHP Warning:  require_once(C:\xampp\htdocs\apisistemas\backend\endpoints): Failed to open stream: Permission denied in C:\xampp\htdocs\apisistemas\backend\index.php on line 9
+[19-Apr-2025 01:58:41 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\apisistemas\backend/endpoints' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\apisistemas\backend\index.php:9
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\apisistemas\backend\index.php on line 9
