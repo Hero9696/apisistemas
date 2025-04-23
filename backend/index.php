@@ -53,6 +53,39 @@ require_once __DIR__ . '/endpoints/paciente/paciente.php';
 require_once __DIR__ . '/endpoints/parentezco/parentezco.php';
 
 
+
+
+/*=============================================
+Endpoints agregados por: Milton Joetd Gómez Marroquín
+Fecha: 2025
+Descripción: Endpoints para la gestión de:
+- Bitacora
+- CitaMedica
+- Contacto
+- Departamento
+=============================================*/
+/*ENDPOINTS Bitacora */
+require_once __DIR__ . '/endpoints/bitacora/bitacoraDelete.php';
+require_once __DIR__ . '/endpoints/bitacora/bitacoraGet.php';
+require_once __DIR__ . '/endpoints/bitacora/bitacoraPost.php';
+require_once __DIR__ . '/endpoints/bitacora/bitacoraPut.php';
+/* ENDPOINTS CitaMedica */
+require_once __DIR__ . '/endpoints/citamedica/citamedicaDelete.php';
+require_once __DIR__ . '/endpoints/citamedica/citamedicaGet.php';
+require_once __DIR__ . '/endpoints/citamedica/citamedicaPost.php';
+require_once __DIR__ . '/endpoints/citamedica/citamedicaPut.php';
+/* ENDPOINTS Contacto */
+require_once __DIR__ . '/endpoints/contacto/contactoDelete.php';
+require_once __DIR__ . '/endpoints/contacto/contactoGet.php';
+require_once __DIR__ . '/endpoints/contacto/contactoPost.php';
+require_once __DIR__ . '/endpoints/contacto/contactoPut.php';
+/* ENDPOINTS Departamento */
+require_once __DIR__ . '/endpoints/departamento/departamentoDelete.php';
+require_once __DIR__ . '/endpoints/departamento/departamentoGet.php';
+require_once __DIR__ . '/endpoints/departamento/departamentoPost.php';
+require_once __DIR__ . '/endpoints/departamento/departamentoPut.php';
+
+
 //comentarios para el git
 
 

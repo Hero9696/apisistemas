@@ -1,52 +1,62 @@
 <?php
 
 require_once "connection.php";
-require_once "get.model.php";
 
 class PutModel
 {
-  /*==========================
-  PUT PETITION
-  example : update USERS SET fist_name= 'Multon', last_name = 'Gomez' WHERE id = 1 and state_user = true;
-  ==========================*/
   static public function putData($table, $data, $id, $nameId)
   {
-    /*==========================
-    validate from id
-    ==========================*/
-    $reponse = GetModel::getDataFilter($table, $nameId, $id, null, null, null, null, null);
+    try {
+      // Validar existencia del registro
+      $stmt = Connection::connect()->prepare("SELECT * FROM $table WHERE $nameId = :id");
+      $stmt->bindParam(":id", $id, PDO::PARAM_INT);
+      $stmt->execute();
 
-    if (empty($reponse)) {
-      return null;
-    }
+      if ($stmt->rowCount() == 0) {
+        return [
+          "status" => 404,
+          "message" => "No se encontró el registro con $nameId = $id"
+        ];
+      }
 
-    /*==========================
-    update data
-    ==========================*/
+      // Construir sentencia SET
+      $set = "";
+      foreach ($data as $key => $value) {
+        $set .= "$key = :$key, ";
+      }
+      $set = rtrim($set, ", ");
 
-    $set = "";
+      $sql = "UPDATE $table SET $set WHERE $nameId = :$nameId";
+      $stmt = Connection::connect()->prepare($sql);
 
-    foreach ($data as $key => $value) {
-      $set .= $key . " = :" . $key . ",";
-    }
-    $set = substr($set, 0, -1);
-    $sql = "UPDATE $table SET $set WHERE $nameId = :$nameId";
-    $link = Connection::connect();
-    $stmt = $link->prepare($sql);
-    //looping the data to bind the params
-    foreach ($data as $key => $value) {
-      $stmt->bindParam(":" . $key, $data[$key], PDO::PARAM_STR);
-    }
-    $stmt->bindParam(":" . $nameId, $id, PDO::PARAM_STR);
+      // Asignar parámetros
+      foreach ($data as $key => $value) {
+        $type = (is_int($value) ? PDO::PARAM_INT : PDO::PARAM_STR);
+        $stmt->bindValue(":$key", $value, $type);
+      }
 
-    if ($stmt->execute()) {
-      $reponse = array(
-        "comment" => "The process was successful"
-      );
+      $stmt->bindValue(":$nameId", $id, PDO::PARAM_INT);
 
-      return $reponse;
-    } else {
-      return $link->errorInfo();
+      if ($stmt->execute()) {
+        return [
+          "status" => 200,
+          "message" => "Registro actualizado correctamente",
+          "updated_id" => $id
+        ];
+      }
+
+      return [
+        "status" => 500,
+        "message" => "Error en la ejecución",
+        "error" => $stmt->errorInfo()
+      ];
+
+    } catch (PDOException $e) {
+      return [
+        "status" => 500,
+        "message" => "Excepción capturada",
+        "error" => $e->getMessage()
+      ];
     }
   }
 }

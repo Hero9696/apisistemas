@@ -23,9 +23,9 @@ class Connection
 
 
     $infoDB = array(
-      "database" => "proyectocadep", //this is the name of the database
+      "database" => "ProyectoCadep", //this is the name of the database
       "user" => "root", //xampp = root this is the user of the database from server
-      "password" => "", //xampp = "" this is the password of the database from server
+      "password" => "mjgm2003**", //xampp = "" this is the password of the database from server
     );
 
     return $infoDB;
