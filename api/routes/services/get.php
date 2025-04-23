@@ -71,3 +71,20 @@ GET requests for range selection with relationships
 
   $response->getData($table, $select, $orderBy, $orderMode, $startAt, $endAt);
 }
+
+
+class GetService {
+    public static function getReligion() {
+        $conn = Connection::connect();
+        $query = $conn->query("SELECT * FROM dbo.Religion");
+        return $query->fetchAll(PDO::FETCH_ASSOC);
+    }
+
+    public static function getRol() {
+        $conn = Connection::connect();
+        $query = $conn->query("SELECT * FROM dbo.Rol WHERE estado = 'activo'");
+        return $query->fetchAll(PDO::FETCH_ASSOC);
+    }
+    
+}
+?>

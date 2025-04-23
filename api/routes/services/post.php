@@ -169,3 +169,15 @@ if(isset($_POST)){
   }
 
 }
+
+
+class PostService {
+    public static function createTerapeuta($data) {
+        $conn = Connection::connect();
+        $stmt = $conn->prepare("INSERT INTO dbo.Terapeuta (nombre, especialidad) VALUES (?, ?)");
+        $stmt->execute([$data['nombre'], $data['especialidad']]);
+        return ['id' => $conn->lastInsertId()];
+    }
+   
+}
+?>

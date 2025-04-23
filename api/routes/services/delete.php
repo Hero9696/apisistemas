@@ -131,3 +131,13 @@ if(isset($_GET["id"]) && isset($_GET["nameId"])){
   }	
 
 }
+
+class DeleteService {
+    public static function deleteReligion($id) {
+        $conn = Connection::connect();
+        $stmt = $conn->prepare("DELETE FROM dbo.Religion WHERE id = ?");
+        $stmt->execute([$id]);
+        return ['deleted' => $stmt->rowCount() > 0];
+    }
+}
+?>

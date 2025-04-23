@@ -145,3 +145,14 @@ if (isset($_GET["id"]) && isset($_GET["nameId"])) {
     return;
   }
 }
+
+
+class PutService {
+    public static function updateTerapeutaEspe($id, $data) {
+        $conn = Connection::connect();
+        $stmt = $conn->prepare("UPDATE dbo.TerapeutaEspe SET especialidad = ? WHERE id = ?");
+        $stmt->execute([$data['especialidad'], $id]);
+        return ['updated_rows' => $stmt->rowCount()];
+    }
+}
+?>

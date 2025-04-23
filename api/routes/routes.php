@@ -2,8 +2,12 @@
 require_once __DIR__ . "/../models/connection.php";
 require_once __DIR__ . "/../controllers/get.controller.php";
 
+
+
 $routesArray = explode("/", $_SERVER['REQUEST_URI']);
 $routesArray = array_filter($routesArray);
+
+
 
 /*=============================================
 Cuando no se hace ninguna solicitud a la API

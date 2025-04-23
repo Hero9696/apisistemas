@@ -52,7 +52,7 @@ require_once __DIR__ . '/endpoints/ocupacion/ocupacion.php';
 require_once __DIR__ . '/endpoints/paciente/paciente.php';
 require_once __DIR__ . '/endpoints/parentezco/parentezco.php';
 
-
+require __DIR__ . '/routes/routes.php';
 //comentarios para el git
 
 
