@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Consulta de Pacientes | CADEP</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+    }
+    header {
+      background-color: #0047AB;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 1.6rem;
+      font-weight: bold;
+    }
+    .container {
+      padding: 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .filtro input {
+      padding: 10px;
+      width: 300px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      margin-bottom: 20px;
+      font-size: 1rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    th {
+      background-color: #f2f2f2;
+      color: #333;
+      text-align: left;
+      padding: 12px;
+    }
+    td {
+      padding: 12px;
+      border-bottom: 1px solid #eee;
+    }
+    tr:hover {
+      background-color: #f0f8ff;
+    }
+    .highlight {
+      color: #E63946;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    Consulta de Pacientes - CADEP
+  </header>
+
+  <div class="container">
+    <div class="filtro">
+      <input type="text" id="filtro" placeholder="Buscar por nombre o CUI..." onkeyup="filtrarPacientes()">
+    </div>
+
+    <table id="tablaPacientes">
+      <thead>
+        <tr>
+          <th>CUI</th>
+          <th>Nombre Completo</th>
+          <th>Sexo</th>
+          <th>Fecha de Nacimiento</th>
+          <th>Teléfono</th>
+          <th>Dirección</th>
+          <th>Edad</th>
+          <th>Peso</th>
+          <th>Religión</th>
+          <th>Escolaridad</th>
+          <th>Estado Civil</th>
+          <th>Motivo de Consulta</th>
+        </tr>
+      </thead>
+      <tbody id="pacientesBody">
+        <!-- Datos insertados aquí -->
+      </tbody>
+    </table>
+  </div>
+
+  <script>
+    async function cargarPacientes() {
+      try {
+        const res = await fetch('http://localhost/apisistemas/backend/endpoints/paciente/paciente.php');
+        const data = await res.json();
+        const body = document.getElementById('pacientesBody');
+        body.innerHTML = '';
+
+        data.forEach(p => {
+          const fila = `
+            <tr>
+              <td>${p.CUI}</td>
+              <td>${p.primerNombre} ${p.segundoNombre || ''} ${p.primerApellido} ${p.segundoApellido || ''}</td>
+              <td>${p.sexo}</td>
+              <td>${p.fechaNacimiento}</td>
+              <td>${p.telefono}</td>
+              <td>${p.direccion}</td>
+              <td>${p.edad}</td>
+              <td>${p.peso}</td>
+              <td>${p.id_Religion}</td>
+              <td>${p.id_Escolaridad}</td>
+              <td>${p.id_EstadoCivil}</td>
+              <td>${p.MotivoConsulta}</td>
+            </tr>`;
+          body.innerHTML += fila;
+        });
+      } catch (error) {
+        alert("Error al cargar pacientes: " + error);
+      }
+    }
+
+    function filtrarPacientes() {
+      const input = document.getElementById("filtro").value.toLowerCase();
+      const filas = document.querySelectorAll("#tablaPacientes tbody tr");
+      filas.forEach(fila => {
+        const texto = fila.textContent.toLowerCase();
+        fila.style.display = texto.includes(input) ? "" : "none";
+      });
+    }
+
+    window.onload = cargarPacientes;
+  </script>
+
+</body>
+</html>
