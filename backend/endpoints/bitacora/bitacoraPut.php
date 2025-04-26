@@ -1,5 +1,16 @@
 <?php
 
+
+header('Access-Control-Allow-Origin: *');
+header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS');
+header('Access-Control-Allow-Headers: Origin, Content-Type, Accept');
+header('Content-Type: application/json');
+
+if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
+    exit(0);
+}
+
+
 require_once __DIR__ . '/../../../api/controllers/put.controller.php';
 header('Content-Type: application/json');
 
@@ -19,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "PUT") {
   $id = $data["id_bitacora"];
   unset($data["id_bitacora"]);
 
-  $table = "bitacora"; // ✅ usa la tabla con mayúscula si así está creada
+  $table = "bitacora"; 
   $nameId = "id_bitacora";
 
   PutController::putData($table, $data, $id, $nameId);

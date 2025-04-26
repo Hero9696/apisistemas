@@ -4,19 +4,47 @@ require_once __DIR__ . "/../models/put.model.php";
 
 class PutController
 {
+
+  /*=============================================
+  Put request to edit data
+  =============================================*/
+
   static public function putData($table, $data, $id, $nameId)
   {
+
     $response = PutModel::putData($table, $data, $id, $nameId);
-    self::fncResponse($response);
+
+    $return = new PutController();
+    $return->fncResponse($response);
   }
 
-  static public function fncResponse($response)
+  /*=============================================
+  Controller responses
+  =============================================*/
+
+  public function fncResponse($response)
   {
-    http_response_code($response["status"]);
-    echo json_encode([
-      "status" => $response["status"],
-      "results" => $response
-    ]);
+
+    if (!empty($response)) {
+
+      $json = array(
+
+        'status' => 200,
+        'results' => $response
+
+      );
+    } else {
+
+      $json = array(
+
+        'status' => 404,
+        'results' => 'Not Found',
+        'method' => 'put'
+
+      );
+    }
+
+    echo json_encode($json, http_response_code($json["status"]));
   }
 }
 

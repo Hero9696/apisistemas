@@ -1,4 +1,17 @@
 <?php
+
+
+header('Access-Control-Allow-Origin: *');
+header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS');
+header('Access-Control-Allow-Headers: Origin, Content-Type, Accept');
+header('Content-Type: application/json');
+
+if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
+    http_response_code(200);
+    exit();
+}
+
+
 /*=============================================
 Autor: Engelber Venceslav Cifuentes Moran
 Endpoint para gestionar Ocupaciones
@@ -70,32 +83,43 @@ switch ($method) {
         PostController::postData('Ocupacion', $data);
         break;
 
+
     case 'PUT':
-        $data = json_decode(file_get_contents('php://input'), true);
-        $id = $_GET['id'] ?? null;
-        $nameId = 'id_Ocupacion';
+            $data = json_decode(file_get_contents('php://input'), true);
+            
+            // Obtener ID desde JSON también (más estándar)
+            $id = $_GET['id'] ?? ($data['id_Ocupacion'] ?? null);
+            $nameId = 'id_Ocupacion';
         
-        if (!$id) {
-            echo json_encode([
-                "status" => 400,
-                "results" => "ID no proporcionado"
-            ]);
-            break;
-        }
-
-        // Validar campos obligatorios
-        $camposFaltantes = validarCamposObligatorios($data, $camposObligatorios);
-        if (!empty($camposFaltantes)) {
-            echo json_encode([
-                "status" => 400,
-                "results" => "Campos obligatorios faltantes: " . implode(", ", $camposFaltantes)
-            ]);
-            break;
-        }
+            if (!$id) {
+                http_response_code(400);
+                echo json_encode([
+                    "status" => 400,
+                    "results" => "ID no proporcionado"
+                ]);
+                break;
+            }
         
-        PutController::putData('Ocupacion', $data, $id, $nameId);
-        break;
-
+            // Validar campos obligatorios (sin rechazar 0, false o null válidos)
+            $camposFaltantes = [];
+            foreach ($camposObligatorios as $campo) {
+                if (!array_key_exists($campo, $data)) {
+                    $camposFaltantes[] = $campo;
+                }
+            }
+        
+            if (!empty($camposFaltantes)) {
+                http_response_code(400);
+                echo json_encode([
+                    "status" => 400,
+                    "results" => "Campos obligatorios faltantes: " . implode(", ", $camposFaltantes)
+                ]);
+                break;
+            }
+        
+            // Ejecutar actualización
+            PutController::putData('Ocupacion', $data, $id, $nameId);
+            break;
     case 'DELETE':
         $id = $_GET['id'] ?? null;
         $nameId = 'id_Ocupacion';
